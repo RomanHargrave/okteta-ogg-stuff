@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <struct name="oggPage">
+    <!-- Bytes 0 - 3 -->
+    <!-- Always OggS -->
+    <array name="capture_pattern" length="4">
+      <char name="val" />
+    </array>
+
+    <!-- Byte 4 -->
+    <uint8 name="stream_structure_version" />
+
+    <!-- Byte 5 -->
+    <struct name="header_type_flag">
+      <!-- 0x01 --> <bitfield name="continued_packet" type="bool"     width="1" />
+      <!-- 0x02 --> <bitfield name="continued_page"   type="bool"     width="1" />
+      <!-- 0x03 --> <bitfield name="unused_0x03"      type="unsigned" width="1" />
+      <!-- 0x04 --> <bitfield name="last_page"        type="bool"     width="1" />
+      <!-- 0x05 --> <bitfield name="unused_0x05"      type="unsigned" width="1" />
+      <!-- 0x06 --> <bitfield name="unused_0x06"      type="unsigned" width="1" />
+      <!-- 0x07 --> <bitfield name="unused_0x07"      type="unsigned" width="1" />
+      <!-- 0x08 --> <bitfield name="unused_0x08"      type="unsigned" width="1" />
+    </struct>
+  
+    <!-- Bytes 6 - 13 -->
+    <int64 name="absolute granule position" />
+
+    <!-- Bytes 14 - 17 -->
+    <uint32 name="stream serial number" />
+
+    <!-- Bytes 18 - 21 -->
+    <uint32 name="page sequence number" />
+
+    <!-- Bytes 22 - 25 -->
+    <uint32 name="page_checksum" />
+
+    <!-- Byte 26 -->
+    <uint8 name="page_segments" />
+  </struct>
+</data>
+
+<!-- vim: filetype=xml ts=2 softtabstop=2 shiftwidth=2 :
+     -->

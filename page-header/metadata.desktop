@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=application-ogg
+Type=Service
+ServiceTypes=KPluginInfo
+
+Name=OGG Page Header
+Comment=OGG page header definition for Okteta
+
+X-KDE-PluginInfo-Author=Roman Hargrave
+X-KDE-PluginInfo-Email=roman@hargrave.info
+X-KDE-PluginInfo-Name=ogg-file-page-header
+X-KDE-PluginInfo-Version=0
+X-KDE-PluginInfo-Website=http://hargrave.info
+X-KDE-PluginInfo-Category=structure/js
+X-KDE-PluginInfo-License=Public Domain

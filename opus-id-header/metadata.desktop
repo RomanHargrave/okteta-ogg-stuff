@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=application-ogg
+Type=Service
+ServiceTypes=KPluginInfo
+
+Name=Opus ID Header (OpusHead)
+Comment=Opus ID packet format for Okteta 
+
+X-KDE-PluginInfo-Author=Roman Hargrave
+X-KDE-PluginInfo-Email=roman@hargrave.info
+X-KDE-PluginInfo-Name=opus-header-packet 
+X-KDE-PluginInfo-Version=0
+X-KDE-PluginInfo-Website=http://hargrave.info
+X-KDE-PluginInfo-Category=structure/js
+X-KDE-PluginInfo-License=Public Domain
